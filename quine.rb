@@ -69,7 +69,7 @@ template :home do
       const interval = setInterval(function() {
         counter--;
         $(".panel-body h2").html(counter);
-        if (counter < 0) {
+        if (counter === 0) {
             $(".panel-body").html(`<pre style="background:none;border:none;"><code id="test" class="hljs ruby"></code></pre>`);
             requestCode();
             clearInterval(interval);
@@ -124,7 +124,7 @@ template :home do
 
   <body>
     <nav class="navbar navbar-default"><h1 style="text-align:center;"><span class="glyphicon glyphicon-console"></span> Source Code Request</h1></nav>
-    
+
     <div style="width:600px;margin:20px auto;">
     <h2>Instructions</h2>
     <ol>
@@ -163,7 +163,7 @@ template :home do
       const interval = setInterval(function() {
         counter--;
         $(".panel-body h2").html(counter);
-        if (counter < 0) {
+        if (counter === 0) {
             $(".panel-body").html(`<pre style="background:none;border:none;"><code id="test" class="hljs ruby"></code></pre>`);
             requestCode();
             clearInterval(interval);
