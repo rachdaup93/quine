@@ -30,6 +30,7 @@ template :home do
 
   <body>
     <nav class="navbar navbar-default"><h1 style="text-align:center;"><span class="glyphicon glyphicon-console"></span> Source Code Request</h1></nav>
+
     <div style="width:600px;margin:20px auto;">
     <h2>Instructions</h2>
     <ol>
@@ -123,6 +124,7 @@ template :home do
 
   <body>
     <nav class="navbar navbar-default"><h1 style="text-align:center;"><span class="glyphicon glyphicon-console"></span> Source Code Request</h1></nav>
+    
     <div style="width:600px;margin:20px auto;">
     <h2>Instructions</h2>
     <ol>
