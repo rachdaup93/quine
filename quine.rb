@@ -58,7 +58,7 @@ template :home do
     </div>
   </div>
 
-  <script src="http://code.jquery.com/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery.min.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
   <script>
   hljs.initHighlightingOnLoad();
@@ -150,7 +150,7 @@ template :home do
     </div>
   </div>
 
-  <script src="http://code.jquery.com/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery.min.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
   <script>
   hljs.initHighlightingOnLoad();
