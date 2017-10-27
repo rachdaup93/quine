@@ -82,15 +82,10 @@ template :home do
               $(".panel").removeClass("panel-warning").addClass("panel-success");
               $(".panel-heading").html("<b>Source Code Loaded Successfully<b>");
               separators = ['<html>','</html>'];
-              source = source.code.split(new RegExp(separators.join('|'), 'g'));
-              console.log(source)
-              rubyStart = source[0];
-              html = source[1].replace(/</g, "&lt;").replace(/>/g, "&gt;");
-              rubyEnd = source[2];
+
+              rubyStart = source.code.replace(/</g, "&lt;").replace(/>/g, "&gt;");
               
               $('#ruby-start').html(rubyStart);
-              $(".panel-body pre").append(`<code id="html" class="highlight hljs html">&lt;html&gt;${html}&lt;html&gt;</code>`);
-              $(".panel-body pre").append(`<code id="html" class="highlight hljs ruby">${rubyEnd}</code>`)
               $('.highlight').each((index, block)=> {
                 hljs.highlightBlock(block);
                 });
@@ -184,15 +179,10 @@ template :home do
               $(".panel").removeClass("panel-warning").addClass("panel-success");
               $(".panel-heading").html("<b>Source Code Loaded Successfully<b>");
               separators = ['<html>','</html>'];
-              source = source.code.split(new RegExp(separators.join('|'), 'g'));
-              console.log(source)
-              rubyStart = source[0];
-              html = source[1].replace(/</g, "&lt;").replace(/>/g, "&gt;");
-              rubyEnd = source[2];
+
+              rubyStart = source.code.replace(/</g, "&lt;").replace(/>/g, "&gt;");
               
               $('#ruby-start').html(rubyStart);
-              $(".panel-body pre").append(`<code id="html" class="highlight hljs html">&lt;html&gt;${html}&lt;html&gt;</code>`);
-              $(".panel-body pre").append(`<code id="html" class="highlight hljs ruby">${rubyEnd}</code>`)
               $('.highlight').each((index, block)=> {
                 hljs.highlightBlock(block);
                 });
