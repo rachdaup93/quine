@@ -107,6 +107,7 @@ require 'sinatra'
 require 'sinatra/reloader'
 require 'json'
 
+# Redirect root path to /home path
 get '/' do
   redirect to('/home')
 end
